@@ -1,0 +1,1 @@
+<footer>Copyright | My super protected website</footer>
