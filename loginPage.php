@@ -13,11 +13,11 @@
         <form method="get" action="logout.php" name="login">
             <p>
                 <label for="email">Email : </label>
-                <input type="email" id="email" name="email" placeholder="john.doe@example.com" required>
+                <input type="email" id="inputEmail" name="email" placeholder="john.doe@example.com" required>
             </p>
             <p>
                 <label for="password">Password : </label>
-                <input type="password" id="password" name="password" placeholder="********" required>
+                <input type="password" id="inputPassword" name="password" placeholder="********" required>
             </p>
             <p>
                 <input type="submit" name="submit" value="Submit">
