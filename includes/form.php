@@ -1,4 +1,4 @@
-<form method="POST" action="./page1.php" name="login">
+<form method="POST" action="" name="login">
 <!-- <p>
         <label for="gender" id="gender">Gender : </br>
             <input type="checkbox" id="Madam" name="Madam">Madam
