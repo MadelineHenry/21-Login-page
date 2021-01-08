@@ -1,5 +1,11 @@
 <?php
 session_start();
+// try{
+//     $bdd = new PDO('mysql:host=localhost;port=3307;dbname=test;charset=utf8', 'root', '', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+// }
+?>
+
+<?php
 $name_accepted = "Aristo Cat";
 $email_accepted ="lalalou@gmail.com";
 $psw_accepted ="SuperWebmaster49";
@@ -22,6 +28,7 @@ $psw_accepted ="SuperWebmaster49";
         <p class="second_title">Please enter your credentials</p>
         <?php 
 
+        //vérifié que l'adresse email et le mot de passe encodés sont accepter pour ouvrir la session
         if(isset($_POST['email'])&& isset($_POST['password']) && isset($_POST['name']) && !empty($_POST['email']&& !empty($_POST['password']&& !empty($_POST['name'])))){
             if ($_POST['email']=== $email_accepted && $_POST['password']=== $psw_accepted && $_POST['name']=== $name_accepted){
                 $_SESSION['email']= $_POST['email'];
@@ -29,6 +36,7 @@ $psw_accepted ="SuperWebmaster49";
                 $_SESSION['name']= $_POST['name'];
         }
 
+        //envoyer les données de l'utilisateur sur le document logs.text
         $filelog = 'includes/logs.txt';
         $date = date('d m Y');
         $time = date('h:i:sa');
@@ -39,6 +47,7 @@ $psw_accepted ="SuperWebmaster49";
         file_put_contents($filelog, $user, FILE_APPEND | LOCK_EX);
         }
         
+        //fonction pour récupérr l'adresse IP de l'utilisateur
         function getIp(){
             if(!empty($_SERVER['HTTP_CLIENT_IP'])){
             $ip = $_SERVER['HTTP_CLIENT_IP'];
@@ -52,12 +61,16 @@ $psw_accepted ="SuperWebmaster49";
             return $ip;
         }
         
+        //si les informations sont confirmées, ouvrir la session; si non renvoyé à la login page avec log out
         if ($_SESSION){
             include("includes/profil.php");
         }
         else{
-            include("includes/form.php");
+            include("includes/LoginForm.php");
         }
+        // else if {
+        //     include("includes/registrationForm.php");
+        // }
         ?>
         
     </div>
