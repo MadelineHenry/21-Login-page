@@ -39,7 +39,7 @@ label{
     margin-bottom:25px;
 }
 
-#name, #email, #password{
+#gender, #name, #email, #password{
     height: 15px; 
     width: 500px; 
     color: rgb(228, 228, 228);
@@ -48,13 +48,6 @@ label{
     border: 1px solid rgb(179, 178, 178);
     border-radius: 5px;
 }
-
-/* #Madam, #Miss, #Sir{
-    color: rgb(66, 66, 66);
-    margin-top: 5px;
-    margin-right: 5px;
-    padding: 5px;
-} */
 
 .submit_button{
     font-weight: bold;

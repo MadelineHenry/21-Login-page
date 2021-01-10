@@ -1,10 +1,13 @@
 <div class="AccessPart">
     <form method="POST" action="?m=UserRegistration" name="login">
         <p>
-            <label for="gender" id="gender">Gender : </br>
-                <input type="checkbox" id="Madam" name="Madam">Madam
-                <input type="checkbox" id="Miss" name="Miss">Miss
-                <input type="checkbox" id="Sir" name="Sir">Sir</label>
+            <label for="gender" id="gender">Gender : 
+            <select name="gender">
+                <option value="X" id="x" name="x">X</option>
+                <option value="M" id="male" name="male">Male</option>
+                <option value="F" id="female" name="female">Female</option>
+            </select>
+        </label>
         </p>
         <p>
             <label for="firstname">Firstname : </br><input type="name" id="firstname" name="firstname" placeholder="John" required></label>
