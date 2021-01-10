@@ -1,9 +1,8 @@
 <?php
 session_start();
-?>
 
-<?php
-$name_accepted = "Aristo Cat";
+$firstName_accepted = "Aristo";
+$lastName_accepted = "Cat";
 $email_accepted ="lalalou@gmail.com";
 $psw_accepted ="SuperWebmaster49";
 ?>

@@ -1,4 +1,7 @@
-<div class="AccessPart">
+<div class="registrationPart">
+    <h1>Registration</h1>
+    <p class="second_title">Please enter your personal informations </p>
+    
     <form method="POST" action="?m=UserRegistration" name="login">
         <p>
             <label for="gender" id="gender">Gender : 
