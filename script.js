@@ -32,5 +32,3 @@ const PasswordPattern = () => {
         return false;
         }
 }; 
-
-/*-----------  addEventListerner -----------*/

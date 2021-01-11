@@ -23,7 +23,7 @@ $psw_accepted ="SuperWebmaster49";
             if(!empty($_SERVER['HTTP_CLIENT_IP'])){
             $ip = $_SERVER['HTTP_CLIENT_IP'];
             }
-            elseif(!empty($_SERVER['HTTP_X_FORWARDED_FOR'])){
+            else if(!empty($_SERVER['HTTP_X_FORWARDED_FOR'])){
             $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
             }
             else{
@@ -48,10 +48,10 @@ $psw_accepted ="SuperWebmaster49";
                         }
                     break;
                     //affichage du formulaire d'enregistrement
-                    case "displayRegistrationForm" : include("includes/registrationForm.php"); 
+                    case "displayRegistrationForm": include("includes/registrationForm.php"); 
                     break;
                     //enregistrement d'un nouvel utilisateur
-                    case "UserRegistration" : include("includes/confirmationRegistration.php");
+                    case "UserRegistration": include("includes/confirmationRegistration.php");
                     break;
                 } 
             }
